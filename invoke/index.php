@@ -16,9 +16,9 @@ $type = $_GET['type'];
 $encodedUrl = base64_encode($urlToEncode);
 
 if ($type === 'open') {
-    $fanghUrl = 'http://openurl.zeabur.app/?url=' . $encodedUrl;
+    $fanghUrl = 'http://openurl.zeabur.app/?url=https://www.bilibili.com/' . $encodedUrl;
 } elseif ($type === 'jump') {
-    $fanghUrl = 'http://jumping.zeabur.app/?url=' . $encodedUrl;
+    $fanghUrl = 'http://jumping.zeabur.app/?url=https://www.bilibili.com/' . $encodedUrl;
 } else {
     $responseArray = [
         'code' => 0,
