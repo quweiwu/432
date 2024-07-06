@@ -2,7 +2,7 @@
 if (!isset($_GET['url']) || !isset($_GET['type'])) {
     $responseArray = [
         'code' => 0,
-        'msg' => '未提供 URL 或类型参数'
+        'msg' => 'https://www.bilibili.com/'
     ];
 
     header('Content-Type: application/json');
@@ -22,7 +22,7 @@ if ($type === 'open') {
 } else {
     $responseArray = [
         'code' => 0,
-        'msg' => '无效的类型参数'
+        'msg' => 'https://www.bilibili.com/'
     ];
     
     header('Content-Type: application/json');
